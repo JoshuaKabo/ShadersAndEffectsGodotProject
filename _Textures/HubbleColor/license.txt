@@ -1,0 +1,2 @@
+HubbleColor {Zolt}
+CC0, pub domain

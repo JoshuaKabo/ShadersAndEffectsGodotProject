@@ -1,0 +1,2 @@
+Godot docs
+https://docs.godotengine.org/en/stable/tutorials/shaders/your_first_shader/your_second_3d_shader.html?highlight=time#animating-with-time
