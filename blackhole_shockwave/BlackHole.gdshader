@@ -1,7 +1,6 @@
-[gd_resource type="Shader" format=2]
+// From PlayWithFurcifer https://www.youtube.com/watch?v=13V_5xpZgt4
 
-[resource]
-code = "shader_type canvas_item;
+shader_type canvas_item;
 
 uniform sampler2D curve;
 uniform float strength : hint_range(-1, 1) = 0.5;
@@ -21,4 +20,4 @@ void fragment() {
 	
 	// read in screen as a texture, then distort it (offset and warp)
 	COLOR = texture(SCREEN_TEXTURE, SCREEN_UV - diff);
-}"
+}

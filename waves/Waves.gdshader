@@ -1,7 +1,5 @@
-[gd_resource type="Shader" format=2]
-
-[resource]
-code = "shader_type spatial;
+// From Godot docs - https://docs.godotengine.org/en/stable/tutorials/shaders/your_first_shader/your_second_3d_shader.html?highlight=time#animating-with-time
+shader_type spatial;
 // high specular reflectance
 render_mode specular_toon;
 // shader_modes like unshaded are full presets

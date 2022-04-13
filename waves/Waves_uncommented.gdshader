@@ -1,7 +1,5 @@
-[gd_resource type="Shader" format=2]
-
-[resource]
-code = "shader_type spatial;
+// From Godot docs - https://docs.godotengine.org/en/stable/tutorials/shaders/your_first_shader/your_second_3d_shader.html?highlight=time#animating-with-time
+shader_type spatial;
 
 render_mode specular_toon;
 
@@ -46,4 +44,4 @@ void fragment() {
 	ROUGHNESS = 0.01 * (1.0 - fresnel);
 	ALBEDO = vec3(0.01, 0.03, 0.05) + (0.1 * fresnel);
 	
-} "
+}

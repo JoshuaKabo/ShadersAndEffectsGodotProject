@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://blackhole_shockwave/BlackHole.tres" type="Shader" id=1]
+[ext_resource path="res://blackhole_shockwave/BlackHole.gdshader" type="Shader" id=1]
 [ext_resource path="res://_Textures/HubbleColor/hubblecolor.jpg" type="Texture" id=2]
 [ext_resource path="res://_Textures/icon.png" type="Texture" id=3]
 [ext_resource path="res://blackhole_shockwave/CenterCircle.gd" type="Script" id=4]
