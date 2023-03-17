@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/CA_Offset2.png-f10c92ba4d7284255ecacf91642f4b2e.stex"
+path="res://.import/tx_CA_Offset1.png-edfb6042c4d44b0c2824dda2198c521b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://_Textures/ChromaticAberrationMasks/CA_Offset2.png"
-dest_files=[ "res://.import/CA_Offset2.png-f10c92ba4d7284255ecacf91642f4b2e.stex" ]
+source_file="res://_Textures/ChromaticAberrationMasks/tx_CA_Offset1.png"
+dest_files=[ "res://.import/tx_CA_Offset1.png-edfb6042c4d44b0c2824dda2198c521b.stex" ]
 
 [params]
 
