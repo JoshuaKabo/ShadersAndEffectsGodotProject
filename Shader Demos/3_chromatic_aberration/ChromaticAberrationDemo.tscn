@@ -2,7 +2,7 @@
 
 [ext_resource path="res://_Textures/ChromaticAberrationMasks/tx_CA_Offset2.png" type="Texture" id=1]
 [ext_resource path="res://_Textures/HubbleColor/hubblecolor.jpg" type="Texture" id=2]
-[ext_resource path="res://Shader Demos/chromatic_aberration/ChromaticAberrationDemo.gdshader" type="Shader" id=3]
+[ext_resource path="res://Shader Demos/3_chromatic_aberration/ChromaticAberrationDemo.gdshader" type="Shader" id=3]
 
 [sub_resource type="ShaderMaterial" id=2]
 shader = ExtResource( 3 )

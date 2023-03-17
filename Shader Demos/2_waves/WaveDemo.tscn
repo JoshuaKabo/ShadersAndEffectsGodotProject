@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Shader Demos/waves/Waves_uncommented.gdshader" type="Shader" id=1]
-[ext_resource path="res://Shader Demos/waves/WaveScript.gd" type="Script" id=2]
+[ext_resource path="res://Shader Demos/2_waves/Waves_uncommented.gdshader" type="Shader" id=1]
+[ext_resource path="res://Shader Demos/2_waves/WaveScript.gd" type="Script" id=2]
 
 [sub_resource type="PlaneMesh" id=1]
 subdivide_width = 32
