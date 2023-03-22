@@ -4,7 +4,7 @@ shader_type canvas_item;
 
 uniform bool active = true;
 uniform float amount = 1.0;
-uniform sampler2D offset_tex : hint_white;
+uniform sampler2D offset_tex : hint_default_white;
 
 // editor color picker
 //uniform vec4 color : hint_color = vec4(1.0,1.0,1.0,1.0);

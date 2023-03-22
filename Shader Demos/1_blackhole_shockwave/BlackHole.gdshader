@@ -3,6 +3,7 @@
 shader_type canvas_item;
 
 uniform sampler2D curve;
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
 uniform float strength : hint_range(-1, 1) = 0.5;
 
 // using a backbuffer copy node following a screen tex shader node refreshes the screen copy buffer

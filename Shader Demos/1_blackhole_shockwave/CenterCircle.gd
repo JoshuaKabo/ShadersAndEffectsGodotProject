@@ -1,6 +1,6 @@
 extends Node2D
 
-export var radius = 1.0
+@export var radius = 1.0
 
 
 func _draw():
