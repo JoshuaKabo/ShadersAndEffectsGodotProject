@@ -1,0 +1,1 @@
+"simpleislands" by Joshua Kabo is licensed under MIT License, as is attached to the source project, Godot Shaders and Effects Project
