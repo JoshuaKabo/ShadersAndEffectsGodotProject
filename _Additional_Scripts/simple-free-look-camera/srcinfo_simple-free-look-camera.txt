@@ -1,0 +1,4 @@
+"Simple Free-Look Camera" by aloivmada is licensed under the MIT License
+"Simple Free-Look Camera": https://godotengine.org/asset-library/asset/701
+aloivmada : https://godotengine.org/asset-library/asset?user=aloivmada
+MIT License: https://opensource.org/licenses/MIT

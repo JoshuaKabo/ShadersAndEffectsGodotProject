@@ -1,8 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://cj0h3b0t5fmq4"]
+[gd_scene load_steps=10 format=3 uid="uid://rtdog0n73m8i"]
 
 [ext_resource type="Texture2D" uid="uid://chq2uj1gbeght" path="res://_Textures/icon.png" id="1"]
 [ext_resource type="Script" path="res://Shader Demos/1_blackhole_shockwave/CenterCircle.gd" id="2"]
-[ext_resource type="Texture2D" uid="uid://b8r4swb2k8m4v" path="res://_Textures/HubbleColor/hubblecolor.jpg" id="3"]
+[ext_resource type="Texture2D" uid="uid://c4th28w5rwkfh" path="res://_Textures/StarRegion/StarRegion.jpg" id="3"]
 [ext_resource type="Shader" path="res://Shader Demos/1_blackhole_shockwave/BlackHole.gdshader" id="4"]
 
 [sub_resource type="Curve" id="3"]

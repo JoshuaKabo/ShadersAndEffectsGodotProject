@@ -1,6 +1,11 @@
-extends Camera3D
+class_name FreeLookCamera extends Camera3D
 
-@export var sensitivity = 0.25 # (float, 0.0, 1.0)
+# Modifier keys' speed multiplier
+const SHIFT_MULTIPLIER = 2.5
+const ALT_MULTIPLIER = 1.0 / SHIFT_MULTIPLIER
+
+
+@export_range(0.0, 1.0) var sensitivity: float = 0.25
 
 # Mouse state
 var _mouse_position = Vector2(0.0, 0.0)
@@ -20,6 +25,8 @@ var _a = false
 var _d = false
 var _q = false
 var _e = false
+var _shift = false
+var _alt = false
 
 func _input(event):
 	# Receives mouse motion
@@ -51,6 +58,10 @@ func _input(event):
 				_q = event.pressed
 			KEY_E:
 				_e = event.pressed
+			KEY_SHIFT:
+				_shift = event.pressed
+			KEY_ALT:
+				_alt = event.pressed
 
 # Updates mouselook and movement every frame
 func _process(delta):
@@ -60,14 +71,21 @@ func _process(delta):
 # Updates camera movement
 func _update_movement(delta):
 	# Computes desired direction from key states
-	_direction = Vector3(_d as float - _a as float, 
-						 _e as float - _q as float,
-						 _s as float - _w as float)
+	_direction = Vector3(
+		(_d as float) - (_a as float), 
+		(_e as float) - (_q as float),
+		(_s as float) - (_w as float)
+	)
 	
 	# Computes the change in velocity due to desired direction and "drag"
 	# The "drag" is a constant acceleration on the camera to bring it's velocity to 0
 	var offset = _direction.normalized() * _acceleration * _vel_multiplier * delta \
 		+ _velocity.normalized() * _deceleration * _vel_multiplier * delta
+	
+	# Compute modifiers' speed multiplier
+	var speed_multi = 1
+	if _shift: speed_multi *= SHIFT_MULTIPLIER
+	if _alt: speed_multi *= ALT_MULTIPLIER
 	
 	# Checks if we should bother translating the camera
 	if _direction == Vector3.ZERO and offset.length_squared() > _velocity.length_squared():
@@ -79,7 +97,7 @@ func _update_movement(delta):
 		_velocity.y = clamp(_velocity.y + offset.y, -_vel_multiplier, _vel_multiplier)
 		_velocity.z = clamp(_velocity.z + offset.z, -_vel_multiplier, _vel_multiplier)
 	
-		translate(_velocity * delta)
+		translate(_velocity * delta * speed_multi)
 
 # Updates mouse look 
 func _update_mouselook():
